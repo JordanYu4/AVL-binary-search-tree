@@ -1,1 +1,1 @@
-Binary search tree class built in Ruby 
+Self-balancing binary search tree class built in Ruby 

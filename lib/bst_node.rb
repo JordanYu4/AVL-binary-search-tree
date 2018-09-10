@@ -1,6 +1,6 @@
 class BSTNode
   attr_reader :value
-  attr_accessor :left, :right
+  attr_accessor :left, :right, :parent
 
   def initialize(value, parent = nil)
     @value = value
@@ -11,9 +11,9 @@ class BSTNode
 
   def disown(node) 
     if left == node 
-      left = nil
+      self.left = nil
     elsif right == node
-      right = nil
+      self.right = nil
     end
   end
 end

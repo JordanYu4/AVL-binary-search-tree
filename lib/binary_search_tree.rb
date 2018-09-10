@@ -30,13 +30,15 @@ class BinarySearchTree
     target = find(value)
     children = node_children(target)
     # case children.length
+    # when 0
+
     # when 1
     #   children[0].parent = target.parent
 
     # when 2
-
+    # end
     target.parent.disown(target)
-    target.value, target.parent = nil, nil
+    target.parent = nil
     target.left, target.right = nil, nil
   end
 
